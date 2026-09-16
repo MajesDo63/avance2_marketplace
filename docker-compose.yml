@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: marketplace_api
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_HOST=db-placeholder
+      - S3_BUCKET_NAME=marketplace-datos-protegidos-lsca2314
+      - NOTIF_SERVICE_URL=http://notificaciones:5001/notificar
+    depends_on:
+      - notificaciones
+    networks:
+      - red-marketplace
+
+  notificaciones:
+    build:
+      context: .
+      dockerfile: Dockerfile.notif
+    container_name: marketplace_notificaciones
+    ports:
+      - "5001:5001"
+    networks:
+      - red-marketplace
+
+networks:
+  red-marketplace:
+    driver: bridge

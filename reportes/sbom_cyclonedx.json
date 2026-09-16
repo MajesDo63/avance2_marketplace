@@ -1,0 +1,194 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:9c4a4bdb-f625-445c-9024-76baa977fd27",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-09-16T05:59:09+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.74.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "974db169-4922-42a8-b684-2cfc238dac4c",
+      "type": "application",
+      "name": ".",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "0151e8aa-f148-462c-bf08-f0186e86f92c",
+      "type": "application",
+      "name": "notificaciones/requirements.txt",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "491e05c1-03a4-4dd3-b527-56b7b466c4b0",
+      "type": "library",
+      "name": "gunicorn",
+      "version": "22.0.0",
+      "purl": "pkg:pypi/gunicorn@22.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9ad5d818-9d4f-4a90-a176-f084a5a0d7e6",
+      "type": "library",
+      "name": "gunicorn",
+      "version": "22.0.0",
+      "purl": "pkg:pypi/gunicorn@22.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c8b86595-7216-4a1a-a6a9-ecf155bf272b",
+      "type": "library",
+      "name": "flask",
+      "version": "3.0.3",
+      "purl": "pkg:pypi/flask@3.0.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e5246e2a-5999-48bf-b7de-d1dfa80f5ffd",
+      "type": "library",
+      "name": "flask",
+      "version": "3.0.3",
+      "purl": "pkg:pypi/flask@3.0.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ed6e8a7d-1949-4ea4-a2cc-51e0cf5813b2",
+      "type": "application",
+      "name": "app/requirements.txt",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/boto3@1.34.131",
+      "type": "library",
+      "name": "boto3",
+      "version": "1.34.131",
+      "purl": "pkg:pypi/boto3@1.34.131",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/requests@2.32.3",
+      "type": "library",
+      "name": "requests",
+      "version": "2.32.3",
+      "purl": "pkg:pypi/requests@2.32.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "0151e8aa-f148-462c-bf08-f0186e86f92c",
+      "dependsOn": [
+        "491e05c1-03a4-4dd3-b527-56b7b466c4b0",
+        "c8b86595-7216-4a1a-a6a9-ecf155bf272b"
+      ]
+    },
+    {
+      "ref": "491e05c1-03a4-4dd3-b527-56b7b466c4b0",
+      "dependsOn": []
+    },
+    {
+      "ref": "974db169-4922-42a8-b684-2cfc238dac4c",
+      "dependsOn": [
+        "0151e8aa-f148-462c-bf08-f0186e86f92c",
+        "ed6e8a7d-1949-4ea4-a2cc-51e0cf5813b2"
+      ]
+    },
+    {
+      "ref": "9ad5d818-9d4f-4a90-a176-f084a5a0d7e6",
+      "dependsOn": []
+    },
+    {
+      "ref": "c8b86595-7216-4a1a-a6a9-ecf155bf272b",
+      "dependsOn": []
+    },
+    {
+      "ref": "e5246e2a-5999-48bf-b7de-d1dfa80f5ffd",
+      "dependsOn": []
+    },
+    {
+      "ref": "ed6e8a7d-1949-4ea4-a2cc-51e0cf5813b2",
+      "dependsOn": [
+        "9ad5d818-9d4f-4a90-a176-f084a5a0d7e6",
+        "e5246e2a-5999-48bf-b7de-d1dfa80f5ffd",
+        "pkg:pypi/boto3@1.34.131",
+        "pkg:pypi/requests@2.32.3"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/boto3@1.34.131",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/requests@2.32.3",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}

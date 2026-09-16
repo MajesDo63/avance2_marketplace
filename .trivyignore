@@ -1,0 +1,5 @@
+# Excepcion documentada para entorno AWS Academy Learner Lab:
+# Restriccion de permisos IAM en LabRole impide la creacion de CMK con AWS KMS.
+# Se implementa el estandar SSE-S3 (AES-256) administrado nativamente por AWS.
+AVD-AWS-0132
+AWS-0132
