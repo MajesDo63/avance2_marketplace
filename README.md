@@ -1,8 +1,8 @@
-# César Tech
+# Cesar Tech
 
-César Eduardo Valdez Pinto · Al07003448 · LSCA2314 · Tema 3 Marketplace
+Cesar Eduardo Valdez Pinto · Al07003448 · LSCA2314 · Tema 3 Marketplace
 
-Tienda de práctica con diseño azul, laptops, PC, RAM, SSD y componentes. Las compras no generan cargos ni envío de mercancía.
+Tienda de práctica con diseño azul buenardo, laptops, PC, RAM, SSD y componentes. Las compras no generan cargos ni envío de mercancía.
 
 ## Entrega final
 
