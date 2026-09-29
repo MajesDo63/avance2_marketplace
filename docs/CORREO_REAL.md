@@ -17,3 +17,7 @@ Las ocho pruebas de `tests/test_correo.py` simulan los proveedores y no envían 
 La integración requiere `QA_EMAIL_DESTINATION` y `QA_ALLOW_REAL_EMAIL=1`, envía dos mensajes reales y limpia solo sus propios registros. No ejecutarla con direcciones inventadas ni sin consentimiento.
 
 Estado: implementación y pruebas unitarias completas; remitente y recepción real pendientes.
+
+## Decisión posterior
+
+Se comprobó que SNS estaba permitido y se creó temporalmente un canal con una solicitud de suscripción al correo indicado. El solicitante pidió no usar SNS; se eliminó ese canal y se retiró el código candidato antes de desplegarlo. No se enviaron confirmaciones de pedidos por SNS. La versión publicada conserva únicamente SES y SMTP, sin configuración activa de envío.

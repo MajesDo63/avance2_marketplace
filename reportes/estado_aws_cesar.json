@@ -1,0 +1,27 @@
+{
+  "fecha_utc": "2026-09-29T10:55:54.124139+00:00",
+  "cuenta": "940828937790",
+  "region": "us-east-1",
+  "instancias": [
+    {
+      "id": "i-0d077a1e93b366368",
+      "nombre": "InstanciaQA",
+      "estado": "running",
+      "tipo": "t2.micro",
+      "ip_publica": "44.202.249.26",
+      "inicio_utc": "2026-09-29T10:07:24+00:00",
+      "imagen": "ami-0332d564d76dbd8d6",
+      "imdsv2": "required"
+    },
+    {
+      "id": "i-02c5f6fbbbcae6fe0",
+      "nombre": "Cesar-Tech-Produccion",
+      "estado": "running",
+      "tipo": "t2.micro",
+      "ip_publica": "54.204.91.37",
+      "inicio_utc": "2026-09-29T10:15:48+00:00",
+      "imagen": "ami-0332d564d76dbd8d6",
+      "imdsv2": "required"
+    }
+  ]
+}

@@ -13,8 +13,11 @@ El parche docente se probó en la instancia QA existente. El pipeline lo bloquea
 - [Producción](evidencia_produccion.md)
 - [Correo real](CORREO_REAL.md)
 - [Declaración de IA](declaracion_ia.md)
+- [Documento editable de evidencias](Evidencias_Cesar_Al07003448.docx) y [estado de cierre](CIERRE_ENTREGA_2026-09-29.md)
 
 **Pendiente explícito:** comprobar correo real. El adaptador está implementado y probado con proveedores simulados, pero AWS Academy deniega SES y todavía falta un remitente SMTP autorizado. Un comprobante S3 no es evidencia de correo recibido.
+
+La alternativa SNS fue cancelada por indicación del solicitante; su canal se eliminó antes de enviar correos de pedidos y no se desplegó esa integración. El Word contiene las siete evidencias y requiere revisar su paginación al abrirlo; el entorno de trabajo no dispone del conversor para verificarla automáticamente.
 
 ## Ambientes
 
