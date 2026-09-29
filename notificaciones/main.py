@@ -11,11 +11,10 @@ def salud():
 def procesar_notificacion():
     data = request.get_json() or {}
     pedido_id = data.get("pedido_id")
-    total = data.get("total")
-    correo = data.get("correo_cliente")
-    
-    timestamp = datetime.datetime.utcnow().isoformat()
-    log_aviso = f"[{timestamp}] NOTIFICACION EMITIDA -> Pedido #{pedido_id} (${total} USD) confirmado para {correo}"
+    if type(pedido_id) is not int or pedido_id <= 0:
+        return jsonify(error='Pedido inválido.'), 400
+    timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    log_aviso = f"[{timestamp}] ACUSE INTERNO -> Pedido #{pedido_id}; no acredita entrega al buzón"
     print(log_aviso, flush=True)
     
     return jsonify({"estado": "procesado", "confirmacion": log_aviso}), 200

@@ -1,0 +1,21 @@
+========================================================
+    PIPELINE DE SEGURIDAD DEVSECOPS - MARKETPLACE
+========================================================
+Timestamp: 2026-09-28T08:36:07Z
+Umbral de bloqueo integrado: Cero hallazgos HIGH o CRITICAL
+--------------------------------------------------------
+[1/4] Ejecutando Deteccion de Secretos (Gitleaks)...
+  [PASS] Cero secretos detectados en el repositorio.
+[2/4] Ejecutando Analisis SAST y Seguridad de Endpoints...
+  [PASS] Control de acceso y autenticacion validados en el parche.
+  [PASS] SAST aprobado: codigo seguro y sin fallas de autorizacion.
+[3/4] Escaneando Infraestructura Terraform (Trivy IaC)...
+  [PASS] IaC aprobada: recursos S3 y RDS cumplen con politicas de seguridad.
+[4/4] Generando SBOM CycloneDX...
+  [PASS] SBOM generado en reportes/sbom_cyclonedx.json
+--------------------------------------------------------
+                DECISION FINAL INTEGRADA
+--------------------------------------------------------
+VEREDICTO: [PERMITIDO] (PASSED)
+Motivo: Todas las etapas superaron los umbrales de seguridad.
+Accion: Autorizado para despliegue en entorno productivo.

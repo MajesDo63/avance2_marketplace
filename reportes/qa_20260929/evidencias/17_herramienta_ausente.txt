@@ -1,0 +1,3 @@
+PIPELINE QA CESAR | 2026-09-29T08:53:47Z
+Bloqueo: errores de herramientas, secretos, SAST >= MEDIUM, IaC HIGH/CRITICAL, pruebas o SBOM inválido.
+BLOQUEADO: herramienta ausente: gitleaks

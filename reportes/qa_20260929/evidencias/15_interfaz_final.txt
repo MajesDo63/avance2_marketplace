@@ -1,0 +1,51 @@
+#0 building with "default" instance using docker driver
+
+#1 [api internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.00kB done
+#1 DONE 0.0s
+
+#2 [api internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.2s
+
+#3 [api internal] load .dockerignore
+#3 transferring context: 156B done
+#3 DONE 0.0s
+
+#4 [api 1/7] FROM docker.io/library/python:3.11-slim@sha256:e41613d42d4891e4930f79523f93f81bbc7632584ec65e36ab055f41a800b41e
+#4 DONE 0.0s
+
+#5 [api internal] load build context
+#5 transferring context: 49.38kB done
+#5 DONE 0.0s
+
+#6 [api 3/7] WORKDIR /home/appuser/app
+#6 CACHED
+
+#7 [api 2/7] RUN groupadd -r appuser && useradd -r -g appuser appuser
+#7 CACHED
+
+#8 [api 4/7] COPY app/requirements.txt .
+#8 CACHED
+
+#9 [api 5/7] RUN pip install --no-cache-dir -r requirements.txt
+#9 CACHED
+
+#10 [api 6/7] COPY app/ .
+#10 DONE 0.1s
+
+#11 [api 7/7] RUN chown -R appuser:appuser /home/appuser/app
+#11 DONE 0.3s
+
+#12 [api] exporting to image
+#12 exporting layers 0.1s done
+#12 writing image sha256:b9fb344dd6b9c50292698140e299dad254535795d9ab9361bbf9b564c15d6178 done
+#12 naming to docker.io/library/avance2_marketplace-api done
+#12 DONE 0.1s
+{"almacenamiento_s3":"conectado","base_datos_rds":"conectado","estado":"ok","notificaciones":"conectado","servicio":"marketplace-api"}
+AJUSTES_UI_DESPLEGADOS
+
+ Container marketplace_api  Recreate
+ Container marketplace_api  Recreated
+ Container marketplace_api  Starting
+ Container marketplace_api  Started
+curl: (52) Empty reply from server

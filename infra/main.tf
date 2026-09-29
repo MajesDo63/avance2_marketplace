@@ -46,7 +46,7 @@ resource "aws_db_instance" "marketplace_rds" {
   engine_version         = "15"
   instance_class         = "db.t3.micro"
   username               = "dbadmin"
-  password               = "ClaveTemporalSegura2026!" # Variable inyectada en despliegue
+  password = var.db_password # Variable inyectada en despliegue
   publicly_accessible    = false
   storage_encrypted      = true
   skip_final_snapshot    = true

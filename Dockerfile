@@ -5,6 +5,7 @@ RUN groupadd -r appuser && useradd -r -g appuser appuser
 
 # 2. Definir directorio de trabajo seguro
 WORKDIR /home/appuser/app
+ENV PYTHONPATH=/home/appuser
 
 # 3. Copiar e instalar dependencias primero (aprovecha la cache de Docker)
 COPY app/requirements.txt .
@@ -20,7 +21,7 @@ USER appuser
 EXPOSE 5000
 
 # 6. Monitoreo de salud del contenedor
-HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
+HEALTHCHECK --interval=30s --timeout=20s --start-period=10s --retries=3 \
   CMD python3 -c "import urllib.request; urllib.request.urlopen('http://localhost:5000/salud')" || exit 1
 
 # 7. Servidor en produccion con Gunicorn

@@ -20,3 +20,9 @@
 ## 2. Justificación de la Decisión Final Integrada
 
 El pipeline implementa una compuerta de decisión única (`FALLOS_TOTALES -gt 0`) en lugar de escaneos aislados. Si cualquiera de las etapas de seguridad detecta una violación a las políticas de seguridad corporativas, el script finaliza con código de salida `exit 1` y marca el despliegue como `[BLOQUEADO]`, evitando que código o infraestructura vulnerables lleguen al entorno productivo.
+
+## 3. Actualizacion Entrega Final: Mitigacion de CWE-306 y CWE-639 (BOLA)
+- Etapa 2 ampliada: Se integro compuerta de verificacion de contratos de API para el endpoint de confirmaciones.
+- Mitigacion CWE-306: Autenticacion obligatoria con token de sesion (HTTP 401 si falta credencial).
+- Mitigacion CWE-639 (BOLA): Validacion de pertenencia pedido['usuario_id'] == usuario['id'] en PostgreSQL (HTTP 403 si es ajeno).
+- Umbral: Bloqueo estricto Fail-Closed ante cualquier vulnerabilidad de autorizacion en codigo.

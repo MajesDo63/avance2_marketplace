@@ -33,3 +33,9 @@ Se requiere implementar una plataforma de comercio electrónico segura que permi
 * **Elección:** S3 con cifrado SSE-S3 (AES-256) y bloqueo total de acceso público; RDS PostgreSQL en subred privada con cifrado en reposo habilitado.
 * **Por qué se eligió:** Protege los datos personales de clientes y transacciones contra filtraciones accidentales a internet, operando estrictamente dentro de las limitaciones del rol `LabRole` del Learner Lab.
 * **Alternativa descartada:** Base de datos relacional local en contenedor (`docker run postgres`). Se descartó porque la rúbrica exige infraestructura administrada real en la nube.
+
+## Actualizacion Entrega Final: Mitigacion de CWE-306 y CWE-639 en Parche
+- Se incorporo la funcion obtener_usuario_autenticado() con validacion de cabecera Authorization.
+- Se implemento verificacion relacional en RDS PostgreSQL para impedir acceso horizontal a ordenes de terceros (BOLA).
+- Cifrado: Datos protegidos en S3 con AES-256 (SSE-S3) y passwords con algoritmo scrypt.
+- Resultado de auditoria: Veredicto [PERMITIDO] en corrida verde con cero violaciones criticas.

@@ -1,0 +1,44 @@
+test_header_injection_and_multiple_recipients_are_rejected (test_correo.CorreoReal.test_header_injection_and_multiple_recipients_are_rejected) ... ok
+test_internal_telemetry_failure_does_not_mark_accepted_mail_as_pending (test_correo.CorreoReal.test_internal_telemetry_failure_does_not_mark_accepted_mail_as_pending) ... ok
+test_missing_provider_never_falls_back_to_simulation (test_correo.CorreoReal.test_missing_provider_never_falls_back_to_simulation) ... ok
+test_receipt_is_saved_even_when_mail_fails (test_correo.CorreoReal.test_receipt_is_saved_even_when_mail_fails) ... ok
+test_ses_rejection_is_not_reported_as_sent (test_correo.CorreoReal.test_ses_rejection_is_not_reported_as_sent) ... ok
+test_ses_sends_to_exact_customer_with_order_body (test_correo.CorreoReal.test_ses_sends_to_exact_customer_with_order_body) ... ok
+test_smtp_authentication_happens_after_tls (test_correo.CorreoReal.test_smtp_authentication_happens_after_tls) ... ok
+test_tls_failure_never_authenticates_or_sends (test_correo.CorreoReal.test_tls_failure_never_authenticates_or_sends) ... ok
+test_duplicate_items_are_combined (test_qa.CartTransactions.test_duplicate_items_are_combined) ... ok
+test_empty_cart_is_rejected (test_qa.CartTransactions.test_empty_cart_is_rejected) ... ok
+test_insufficient_stock_is_rejected (test_qa.CartTransactions.test_insufficient_stock_is_rejected) ... ok
+test_purchase_stock_and_order_share_transaction (test_qa.CartTransactions.test_purchase_stock_and_order_share_transaction) ... ok
+test_quantities_must_be_positive_integers (test_qa.CartTransactions.test_quantities_must_be_positive_integers) ... ok
+test_stock_and_price_are_read_from_database (test_qa.CartTransactions.test_stock_and_price_are_read_from_database) ... ok
+test_stock_failure_rolls_back_and_closes_connection (test_qa.CartTransactions.test_stock_failure_rolls_back_and_closes_connection) ... ok
+test_anonymous_cannot_resend (test_qa.QAControls.test_anonymous_cannot_resend) ... ok
+test_checkout_uses_signed_owner_and_server_total (test_qa.QAControls.test_checkout_uses_signed_owner_and_server_total) ... ok
+test_confirmation_failure_is_reported (test_qa.QAControls.test_confirmation_failure_is_reported) ... [2026-09-29 10:35:11,918] WARNING in reenviar_confirmacion: Confirmation unavailable: RuntimeError
+ok
+test_expired_session_is_rejected (test_qa.QAControls.test_expired_session_is_rejected) ... ok
+test_health_dependency_failure_is_not_healthy (test_qa.QAControls.test_health_dependency_failure_is_not_healthy) ... ok
+test_invalid_checkout_email_never_writes (test_qa.QAControls.test_invalid_checkout_email_never_writes) ... ok
+test_login_rejects_missing_or_non_string_fields (test_qa.QAControls.test_login_rejects_missing_or_non_string_fields) ... ok
+test_missing_order_is_404 (test_qa.QAControls.test_missing_order_is_404) ... ok
+test_notification_failure_does_not_hide_saved_order (test_qa.QAControls.test_notification_failure_does_not_hide_saved_order) ... [2026-09-29 10:35:11,928] WARNING in main: Order 987 confirmation pending: RuntimeError
+ok
+test_other_user_cannot_read_receipt (test_qa.QAControls.test_other_user_cannot_read_receipt) ... ok
+test_other_user_cannot_resend (test_qa.QAControls.test_other_user_cannot_resend) ... ok
+test_owner_can_resend (test_qa.QAControls.test_owner_can_resend) ... ok
+test_protected_routes_do_not_access_database_anonymously (test_qa.QAControls.test_protected_routes_do_not_access_database_anonymously) ... ok
+test_publish_rejects_invalid_prices (test_qa.QAControls.test_publish_rejects_invalid_prices) ... ok
+test_publish_rejects_negative_or_fractional_stock (test_qa.QAControls.test_publish_rejects_negative_or_fractional_stock) ... ok
+test_registration_requires_long_password (test_qa.QAControls.test_registration_requires_long_password) ... ok
+test_security_headers_and_template (test_qa.QAControls.test_security_headers_and_template) ... ok
+test_session_has_signature (test_qa.QAControls.test_session_has_signature) ... ok
+test_tampered_session_is_rejected (test_qa.QAControls.test_tampered_session_is_rejected) ... ok
+test_compra_anonima_no_escribe_ni_notifica (test_regresiones.QARegressions.test_compra_anonima_no_escribe_ni_notifica) ... ok
+test_pagina_principal_disponible (test_regresiones.QARegressions.test_pagina_principal_disponible) ... ok
+test_token_inventado_no_autentica (test_regresiones.QARegressions.test_token_inventado_no_autentica) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.153s
+
+OK

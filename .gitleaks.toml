@@ -1,0 +1,6 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Archivo de secretos de ejecución, externo al código versionado. .env.example sí se analiza."
+paths = ['''(^|/)\.env$''']

@@ -1,0 +1,18 @@
+PASS: Salud real: RDS, S3 y microservicio
+PASS: Registro, hash/login, duplicados y contraseña incorrecta
+PASS: Compra anónima y token falsificado rechazados
+PASS: Publicación en RDS sin colisiones de identificadores
+PASS: Carrito calcula el precio real del servidor
+PASS: Compra real en QA: identidad y total no manipulables
+PASS: Pedido persistido, stock descontado y comprobante vinculado
+PASS: Comprobante descargable y cifrado AES256 en S3
+PASS: Otro usuario no lista, descarga ni reenvía el pedido ajeno
+PASS: El propietario sí puede regenerar su confirmación
+PASS: Sin sobreventa: compra rechazada no deja pedido parcial ni descuenta stock
+{"status": "PASS", "checks": 11, "test_user_ids": [3, 5], "test_product_id": 5, "test_order_ids": [1002]}
+CLEANUP: eliminados únicamente los usuarios, producto, pedido y comprobante creados por esta prueba.
+
+--- CONTENEDORES DESPUES DE LAS PRUEBAS ---
+marketplace_api Up 3 minutes (healthy) 0.0.0.0:5000->5000/tcp, :::5000->5000/tcp
+marketplace_notificaciones Up 3 minutes (healthy) 5001/tcp
+

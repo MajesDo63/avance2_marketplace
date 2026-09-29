@@ -1,0 +1,25 @@
+========================================================
+    PIPELINE DE SEGURIDAD DEVSECOPS - MARKETPLACE
+========================================================
+Timestamp: 2026-09-28T08:25:25Z
+Umbral de bloqueo integrado: Cero hallazgos HIGH o CRITICAL
+--------------------------------------------------------
+[1/4] Ejecutando Deteccion de Secretos (Gitleaks)...
+  [PASS] Cero secretos detectados en el repositorio.
+[2/4] Ejecutando Analisis SAST y Seguridad de Endpoints...
+>> Reporte de Hallazgos en el Parche (app/reenviar_confirmacion.py):
+   [HIGH] CWE-306: Missing Authentication for Critical Function
+      Detalle: El endpoint no valida la identidad del solicitante.
+   [CRITICAL] CWE-639: Authorization Bypass Through User-Controlled Key (BOLA / IDOR)
+      Detalle: El endpoint despacha confirmaciones sin validar la propiedad del pedido contra el usuario.
+  [FAIL] Se detectaron fallas criticas en el parche de la aplicacion.
+[3/4] Escaneando Infraestructura Terraform (Trivy IaC)...
+  [PASS] IaC aprobada: recursos S3 y RDS cumplen con politicas de seguridad.
+[4/4] Generando SBOM CycloneDX...
+  [PASS] SBOM generado en reportes/sbom_cyclonedx.json
+--------------------------------------------------------
+                DECISION FINAL INTEGRADA
+--------------------------------------------------------
+VEREDICTO: [BLOQUEADO] (FAILED)
+Motivo: Se encontraron violaciones de seguridad no permitidas.
+Accion: Despliegue cancelado preventivamente.

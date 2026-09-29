@@ -1,0 +1,8 @@
+.git
+.env
+*.tar.gz
+reportes
+docs
+__pycache__
+*.pyc
+tests

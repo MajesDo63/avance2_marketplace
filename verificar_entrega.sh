@@ -60,4 +60,5 @@ if [ $ERRORES -eq 0 ]; then
     echo "Todos los artefactos requeridos estan presentes y no vacios."
 else
     echo "ESTADO DE ENTREGA: [PENDIENTES DETECTADOS: $ERRORES]"
+    exit 1
 fi

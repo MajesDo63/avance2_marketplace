@@ -1,0 +1,32 @@
+
+REGRESIONES_BASELINE_EXIT=1
+
+test_compra_anonima_no_escribe_ni_notifica (__main__.QARegressions.test_compra_anonima_no_escribe_ni_notifica) ... FAIL
+test_pagina_principal_disponible (__main__.QARegressions.test_pagina_principal_disponible) ... FAIL
+test_token_inventado_no_autentica (__main__.QARegressions.test_token_inventado_no_autentica) ... FAIL
+
+======================================================================
+FAIL: test_compra_anonima_no_escribe_ni_notifica (__main__.QARegressions.test_compra_anonima_no_escribe_ni_notifica)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<stdin>", line 22, in test_compra_anonima_no_escribe_ni_notifica
+AssertionError: 201 != 401
+
+======================================================================
+FAIL: test_pagina_principal_disponible (__main__.QARegressions.test_pagina_principal_disponible)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<stdin>", line 12, in test_pagina_principal_disponible
+AssertionError: 404 != 200
+
+======================================================================
+FAIL: test_token_inventado_no_autentica (__main__.QARegressions.test_token_inventado_no_autentica)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<stdin>", line 17, in test_token_inventado_no_autentica
+AssertionError: 404 != 401
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.035s
+
+FAILED (failures=3)

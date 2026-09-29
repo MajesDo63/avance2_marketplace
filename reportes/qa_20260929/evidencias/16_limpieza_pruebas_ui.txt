@@ -1,0 +1,2 @@
+{"ui_fixtures_removed": {"orders": 1, "products": 1, "users": 1}, "remaining_user_count": 2, "remaining_products": [{"id": 1, "nombre": "Teclado Mecanico", "stock": 10}, {"id": 2, "nombre": "Mouse Inalambrico", "stock": 25}, {"id": 3, "nombre": "Monitor 24 pulg", "stock": 4}, {"id": 6, "nombre": "Compu epstein", "stock": 10}], "remaining_order_count": 2, "original_order_1001": [{"id": 1001, "usuario_id": 1, "total": "75.00"}], "original_receipt_unchanged": true, "concurrent_user_activity_preserved": true}
+

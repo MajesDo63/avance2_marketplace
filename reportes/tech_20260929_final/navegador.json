@@ -1,0 +1,108 @@
+{
+  "fecha": "2026-09-29",
+  "categorias": [
+    {
+      "categoria": "Laptops",
+      "esperados": 3,
+      "observados": 3,
+      "productos": [
+        "Laptop Nova 14 | 16 GB RAM · SSD 512 GB",
+        "Laptop Studio 16 | 32 GB RAM · SSD 1 TB",
+        "Laptop Gaming Pulse 15 | 16 GB RAM · SSD 1 TB"
+      ]
+    },
+    {
+      "categoria": "PCs",
+      "esperados": 4,
+      "observados": 4,
+      "productos": [
+        "Compu epstein",
+        "PC Gamer Aurora | 32 GB RAM · SSD 1 TB",
+        "PC Oficina Essential | 16 GB RAM · SSD 512 GB",
+        "Mini PC Compact | 16 GB RAM · SSD 512 GB"
+      ]
+    },
+    {
+      "categoria": "Componentes",
+      "esperados": 8,
+      "observados": 9,
+      "productos": [
+        "Memoria RAM DDR5 32 GB | Kit 2 × 16 GB",
+        "Memoria RAM DDR4 16 GB | 3200 MHz",
+        "Procesador 8 núcleos | Hasta 4.5 GHz",
+        "Tarjeta gráfica | 8 GB GDDR6",
+        "Tarjeta madre ATX | DDR5 · WiFi",
+        "Fuente de poder modular | 750 W",
+        "Gabinete ATX | Cristal templado · 3 ventiladores",
+        "Kit de enfriamiento | 3 ventiladores de 120 mm",
+        "RAM"
+      ]
+    },
+    {
+      "categoria": "Almacenamiento",
+      "esperados": 4,
+      "observados": 4,
+      "productos": [
+        "SSD NVMe M.2 1 TB | PCIe 4.0",
+        "SSD SATA 2.5 pulgadas | 480 GB",
+        "Disco externo portátil | 2 TB USB 3.0",
+        "Memoria USB 3.2 | 128 GB"
+      ]
+    },
+    {
+      "categoria": "Monitores",
+      "esperados": 3,
+      "observados": 3,
+      "productos": [
+        "Monitor 24 pulg",
+        "Monitor Gaming 27 pulgadas | QHD · 165 Hz",
+        "Monitor UltraWide 34 pulgadas | WQHD"
+      ]
+    },
+    {
+      "categoria": "Periféricos",
+      "esperados": 6,
+      "observados": 6,
+      "productos": [
+        "Teclado Mecanico",
+        "Mouse Inalambrico",
+        "Audífonos Gaming | Micrófono integrado",
+        "Webcam Full HD | 1080p · USB",
+        "Teclado mecánico compacto | 75% · RGB",
+        "Mouse Gaming | 6 botones · RGB"
+      ]
+    },
+    {
+      "categoria": "Conectividad",
+      "esperados": 2,
+      "observados": 2,
+      "productos": [
+        "Router WiFi 6 | Doble banda",
+        "Hub USB-C | HDMI · USB · Lector SD"
+      ]
+    },
+    {
+      "categoria": "Electrónica",
+      "esperados": 2,
+      "observados": 2,
+      "productos": [
+        "Kit de electrónica | Protoboard y componentes",
+        "Placa microcontrolador | USB-C · WiFi"
+      ]
+    }
+  ],
+  "nota": "Un producto RAM adicional fue publicado durante la revisión; se conserva. Nueve componentes observados.",
+  "pruebas": {
+    "busqueda_sin_acentos": "grafica encuentra Tarjeta gráfica",
+    "busqueda_vacia": "Estado vacío correcto",
+    "orden": "Ascendente y descendente correctos",
+    "carrito_dos_laptops": "1298.00 USD",
+    "invitado": "Confirmar abre inicio de sesión",
+    "movil": {
+      "viewport_solicitado": 390,
+      "ancho_util": 375,
+      "desbordamiento_horizontal": false
+    },
+    "consola": []
+  }
+}

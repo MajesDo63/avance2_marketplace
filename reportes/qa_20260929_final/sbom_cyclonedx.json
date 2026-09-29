@@ -1,0 +1,173 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:ee6e5e90-f870-4968-9774-ad293a19ea03",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-09-29T08:56:38+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.74.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "5584bd78-6fa8-45e0-8210-6e8da882c3b7",
+      "type": "application",
+      "name": "app",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "4361bac5-6709-4dd5-a572-36550ca62e8a",
+      "type": "application",
+      "name": "requirements.txt",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/boto3@1.34.131",
+      "type": "library",
+      "name": "boto3",
+      "version": "1.34.131",
+      "purl": "pkg:pypi/boto3@1.34.131",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/flask@3.0.3",
+      "type": "library",
+      "name": "flask",
+      "version": "3.0.3",
+      "purl": "pkg:pypi/flask@3.0.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/gunicorn@22.0.0",
+      "type": "library",
+      "name": "gunicorn",
+      "version": "22.0.0",
+      "purl": "pkg:pypi/gunicorn@22.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/psycopg2-binary@2.9.9",
+      "type": "library",
+      "name": "psycopg2-binary",
+      "version": "2.9.9",
+      "purl": "pkg:pypi/psycopg2-binary@2.9.9",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/requests@2.32.3",
+      "type": "library",
+      "name": "requests",
+      "version": "2.32.3",
+      "purl": "pkg:pypi/requests@2.32.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/werkzeug@3.0.4",
+      "type": "library",
+      "name": "werkzeug",
+      "version": "3.0.4",
+      "purl": "pkg:pypi/werkzeug@3.0.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "4361bac5-6709-4dd5-a572-36550ca62e8a",
+      "dependsOn": [
+        "pkg:pypi/boto3@1.34.131",
+        "pkg:pypi/flask@3.0.3",
+        "pkg:pypi/gunicorn@22.0.0",
+        "pkg:pypi/psycopg2-binary@2.9.9",
+        "pkg:pypi/requests@2.32.3",
+        "pkg:pypi/werkzeug@3.0.4"
+      ]
+    },
+    {
+      "ref": "5584bd78-6fa8-45e0-8210-6e8da882c3b7",
+      "dependsOn": [
+        "4361bac5-6709-4dd5-a572-36550ca62e8a"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/boto3@1.34.131",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/flask@3.0.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/gunicorn@22.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/psycopg2-binary@2.9.9",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/requests@2.32.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/werkzeug@3.0.4",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}

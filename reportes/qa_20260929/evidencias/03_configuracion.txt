@@ -1,0 +1,39 @@
+
+--- SOURCE HASHES ---
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  app/__init__.py
+9f49d9ac2ff6e7467668180b2a5dd5f272603780e25fb18f3f32a2d5e87028b4  app/db.py
+e1a0e601160d2fc2e2b1799da1d31fff4cb5ced01d9bee109e2e1005d8e41aa8  app/main.py
+7f6132c07ee920ed765f99df702e26638d4fa7f59d608fc2186f531dfa18b02d  app/notificaciones.py
+5b30378b976fa1a65f17345ab8323efad3b7768a7d791c32c82d2ec84140b001  app/reenviar_confirmacion.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  __init__.py
+9f49d9ac2ff6e7467668180b2a5dd5f272603780e25fb18f3f32a2d5e87028b4  db.py
+e1a0e601160d2fc2e2b1799da1d31fff4cb5ced01d9bee109e2e1005d8e41aa8  main.py
+7f6132c07ee920ed765f99df702e26638d4fa7f59d608fc2186f531dfa18b02d  notificaciones.py
+5b30378b976fa1a65f17345ab8323efad3b7768a7d791c32c82d2ec84140b001  reenviar_confirmacion.py
+
+--- ENVIRONMENT NAMES / NON-SECRET SETTINGS ---
+{"names": ["AWS_REGION", "DB_HOST", "DB_NAME", "DB_PASSWORD", "DB_PORT", "DB_USER", "GPG_KEY", "LANG", "NOTIF_SERVICE_URL", "PATH", "PYTHONPATH", "PYTHON_SHA256", "PYTHON_VERSION", "S3_BUCKET", "SECRET_KEY"], "settings": {"AWS_REGION": "us-east-1", "S3_BUCKET": "marketplace-datos-protegidos-cesar-lsca2314", "DB_HOST": "marketplace-db.cztatesqbrvy.us-east-1.rds.amazonaws.com", "DB_NAME": "postgres"}}
+
+--- COMPOSE SERVICES ---
+notificaciones
+api
+
+--- GIT STATUS ---
+ M reportes/pipeline_bloqueado.txt
+ M reportes/sbom_cyclonedx.json
+?? app/templates/
+?? respaldo_qa_final.tar.gz
+70230ac Integra parche Tema 3 (original, vulnerable) y UI web
+
+--- LOCAL HEALTH ---
+{"base_datos_rds":"conectado","estado":"ok","servicio":"marketplace-api"}
+{"estado":"ok","servicio":"servicio-notificaciones"}
+
+--- DISK USAGE ---
+824K	/home/ec2-user/avance2_marketplace
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          9         2         427MB     410.7MB (96%)
+Containers      2         2         16.9kB    0B (0%)
+Local Volumes   1         0         278.3MB   278.3MB (100%)
+Build Cache     42        0         17.03kB   17.03kB
+

@@ -1,0 +1,48 @@
+
+--- HOST ---
+uid=1000(ec2-user) gid=1000(ec2-user) groups=1000(ec2-user),4(adm),10(wheel),190(systemd-journal),993(docker) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+ 08:13:05 up  2:29,  1 user,  load average: 0.00, 0.00, 0.00
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1      8.0G  6.7G  1.3G  84% /
+               total        used        free      shared  buff/cache   available
+Mem:             957         316         102           0         538         498
+Swap:              0           0           0
+
+--- LISTENERS ---
+State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                
+LISTEN 0      4096       127.0.0.1:37931      0.0.0.0:*    users:(("containerd",pid=3114,fd=15)) 
+LISTEN 0      4096         0.0.0.0:5001       0.0.0.0:*    users:(("docker-proxy",pid=9342,fd=5))
+LISTEN 0      4096         0.0.0.0:5000       0.0.0.0:*    users:(("docker-proxy",pid=9549,fd=5))
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=2416,fd=7))        
+LISTEN 0      4096            [::]:5001          [::]:*    users:(("docker-proxy",pid=9346,fd=5))
+LISTEN 0      4096            [::]:5000          [::]:*    users:(("docker-proxy",pid=9553,fd=5))
+LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=2416,fd=8))        
+
+--- SERVICES ---
+active
+inactive
+inactive
+
+--- CONTAINERS ---
+{"Command":"\"gunicorn --bind 0.0…\"","CreatedAt":"2026-09-29 06:51:37 +0000 UTC","ID":"0c7527800a71","Image":"avance2_marketplace-api","Labels":"com.docker.compose.container-number=1,com.docker.compose.oneoff=False,com.docker.compose.project.working_dir=/home/ec2-user/avance2_marketplace,com.docker.compose.service=api,com.docker.compose.version=2.24.6,com.docker.compose.config-hash=2015b837beffc04628a614df17efd87280284648146816579b7d979ff6381699,com.docker.compose.depends_on=notificaciones:service_started:false,com.docker.compose.image=sha256:a61b7d4980e9eb6bfeb851ec55366c0f09a1b5aa43d93eb829049302c44b6dda,com.docker.compose.project=avance2_marketplace,com.docker.compose.project.config_files=/home/ec2-user/avance2_marketplace/docker-compose.yml","LocalVolumes":"0","Mounts":"","Names":"marketplace_api","Networks":"avance2_marketplace_red-marketplace","Ports":"0.0.0.0:5000-\u003e5000/tcp, :::5000-\u003e5000/tcp","RunningFor":"About an hour ago","Size":"15.1kB (virtual 173MB)","State":"running","Status":"Up About an hour (healthy)"}
+{"Command":"\"gunicorn --bind 0.0…\"","CreatedAt":"2026-09-29 06:51:37 +0000 UTC","ID":"f56bb51f4a3c","Image":"avance2_marketplace-notificaciones","Labels":"com.docker.compose.depends_on=,com.docker.compose.image=sha256:f81e9821050f93685fb43f8274e96f224c134c084587b58d1694556243aefebc,com.docker.compose.project=avance2_marketplace,com.docker.compose.version=2.24.6,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/home/ec2-user/avance2_marketplace/docker-compose.yml,com.docker.compose.project.working_dir=/home/ec2-user/avance2_marketplace,com.docker.compose.service=notificaciones,com.docker.compose.config-hash=b4d543743b128bb1e9d6276ba7b540c1e1f6286a8a714b7e2ae4a52c34337031,com.docker.compose.container-number=1","LocalVolumes":"0","Mounts":"","Names":"marketplace_notificaciones","Networks":"avance2_marketplace_red-marketplace","Ports":"0.0.0.0:5001-\u003e5001/tcp, :::5001-\u003e5001/tcp","RunningFor":"About an hour ago","Size":"1.85kB (virtual 141MB)","State":"running","Status":"Up About an hour (healthy)"}
+/marketplace_api | image=avance2_marketplace-api | workdir=/home/appuser/app | restart=no | status=running | health=healthy | mounts=[] | compose_dir=/home/ec2-user/avance2_marketplace
+/marketplace_notificaciones | image=avance2_marketplace-notificaciones | workdir=/home/appuser/app | restart=no | status=running | health=healthy | mounts=[] | compose_dir=/home/ec2-user/avance2_marketplace
+
+--- PROJECT FILE LOCATIONS ---
+/home/ec2-user/entorno-jenkins-aws/proyecto/Jenkinsfile
+/home/ec2-user/proyecto-retail/Jenkinsfile
+/home/ec2-user/actividad4_integrador/actividad4_pipeline_integrador/Jenkinsfile
+/home/ec2-user/avance2_marketplace/app/main.py
+/home/ec2-user/avance2_marketplace/notificaciones/main.py
+/home/ec2-user/avance2_marketplace/docker-compose.yml
+
+--- TOOLS ---
+Docker Compose version v2.24.6
+git version 2.50.1
+Python 3.9.25
+/usr/local/bin/gitleaks
+/home/ec2-user/.local/bin/bandit
+/usr/local/bin/trivy
+
+Warning: Permanently added 'i-0d077a1e93b366368' (ED25519) to the list of known hosts.
