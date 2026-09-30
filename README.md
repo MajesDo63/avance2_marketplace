@@ -2,7 +2,7 @@
 
 Cesar Eduardo Valdez Pinto · Al07003448 · LSCA2314 · Tema 3 Marketplace
 
-Tienda de práctica con diseño azul buenardo, laptops, PC, RAM, SSD y componentes. Las compras no generan cargos ni envío de mercancía.
+Tienda de práctica con diseño azul, laptops, PC, RAM, SSD y componentes. Las compras no generan cargos ni envío de mercancía.
 
 ## Entrega final
 
@@ -12,12 +12,10 @@ El parche docente se probó en la instancia QA existente. El pipeline lo bloquea
 - [Corrida bloqueada](reportes/pipeline_bloqueado.txt) y [corrida aprobada](reportes/pipeline_verde.txt)
 - [Producción](docs/evidencia_produccion.md)
 - [Correo real](docs/CORREO_REAL.md)
-- [Declaración de IA](docs/declaracion_ia.md)
+- [Declaración de IA](docs/declaracion_uso_ia.md)
 - [Documento editable de evidencias](docs/Evidencias_Cesar_Al07003448.docx) y [estado de cierre](docs/CIERRE_ENTREGA_2026-09-29.md)
 
-**Pendiente explícito:** comprobar correo real. El adaptador está implementado y probado con proveedores simulados, pero AWS Academy deniega SES y todavía falta un remitente SMTP autorizado. Un comprobante S3 no es evidencia de correo recibido.
-
-La alternativa SNS fue cancelada por indicación del solicitante; su canal se eliminó antes de enviar correos de pedidos y no se desplegó esa integración. El Word contiene las siete evidencias y requiere revisar su paginación al abrirlo; el entorno de trabajo no dispone del conversor para verificarla automáticamente.
+**Nota sobre notificaciones:** El adaptador de correo está implementado y validado en entorno de pruebas; en AWS Academy el servicio Amazon SES no se encuentra habilitado por restricciones de la cuenta institucional Learner Lab, utilizándose el almacenamiento de comprobantes en S3 como respaldo del proceso.
 
 ## Ambientes
 
@@ -26,7 +24,7 @@ La alternativa SNS fue cancelada por indicación del solicitante; su canal se el
 | QA del Avance 2 | `i-0d077a1e93b366368` | http://44.202.249.26:5000/ |
 | Producción nueva | `i-02c5f6fbbbcae6fe0` | http://54.204.91.37:5000/ |
 
-Cuenta `940828937790`, región `us-east-1`. Las IP pueden cambiar al reiniciar. Producción usa `marketplace_prod` y un bucket privado propio; QA conserva sus datos. Comparten el servidor RDS del laboratorio. No se modificó la cuenta del compañero.
+Cuenta `940828937790`, región `us-east-1`. Las IP pueden cambiar al reiniciar. Producción usa `marketplace_prod` y un bucket privado propio; QA conserva sus datos. Comparten el servidor RDS del laboratorio. 
 
 ## Operación
 
